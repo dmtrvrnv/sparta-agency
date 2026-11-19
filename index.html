@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Спарта — рекрутинговое агентство</title>
+  <meta name="description" content="Рекрутинговое агентство «Спарта». Подбор направления службы по контракту, помощь с документами и сопровождение до учебного центра.">
+  <meta name="theme-color" content="#111315">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@700;800;900&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="img/hero.jpg">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- Знак: компас, у которого стрелка севера — спартанская лямбда -->
+      <symbol id="mark" viewBox="0 0 64 64">
+        <circle cx="32" cy="34" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="32" cy="34" r="20.5" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <path d="M32 9v-5M57 34h5M32 59v5M7 34H2" stroke="currentColor" stroke-width="2"/>
+        <path d="M32 4 47 46h-7.2L32 22.6 24.2 46H17Z" fill="var(--red)"/>
+        <circle cx="32" cy="34" r="2.4" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="logo" href="#top" aria-label="Спарта, в начало страницы">
+        <svg class="logo__mark" aria-hidden="true"><use href="#mark"/></svg>
+        <span class="logo__word">Спарта</span>
+      </a>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#about">Об агентстве</a>
+        <a href="#roles">Направления</a>
+        <a href="#path">Путь</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img src="img/hero.jpg" alt="" fetchpriority="high">
+      </div>
+      <div class="wrap hero__text">
+        <h1 class="hero__title" id="hero-title" aria-label="Спарта"><span aria-hidden="true" style="--n:0">С</span><span aria-hidden="true" style="--n:1">П</span><span aria-hidden="true" style="--n:2">А</span><span aria-hidden="true" style="--n:3">Р</span><span aria-hidden="true" style="--n:4">Т</span><span aria-hidden="true" style="--n:5">А</span></h1>
+        <p class="hero__sub">Рекрутинговое агентство</p>
+        <p class="hero__lead">Подбираем направление службы по контракту с Минобороны России, помогаем с документами и сопровождаем кандидата до учебного центра.</p>
+        <a class="action" href="#roles">Посмотреть направления</a>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__row">
+          <span>Штурмовики</span><i></i><span>Операторы БПЛА</span><i></i><span>Разведчики</span><i></i><span>Снайперы</span><i></i><span>Связисты</span><i></i><span>Механики-водители</span><i></i><span>Артиллеристы</span><i></i><span>Медики</span><i></i>
+          <span>Штурмовики</span><i></i><span>Операторы БПЛА</span><i></i><span>Разведчики</span><i></i><span>Снайперы</span><i></i><span>Связисты</span><i></i><span>Механики-водители</span><i></i><span>Артиллеристы</span><i></i><span>Медики</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about__head">
+          <h2 class="h2 reveal" id="about-title">Как мы работаем</h2>
+        </div>
+        <div class="tenets">
+          <ol class="tenets__list">
+            <li class="tenet is-on" data-img="0">
+              <span class="tenet__word">Прямо</span>
+              <p>Срок, статус, должность и выплаты называем до поездки и сверяем по документам, а не на словах.</p>
+            </li>
+            <li class="tenet" data-img="1">
+              <span class="tenet__word">По делу</span>
+              <p>Смотрим на опыт и навыки кандидата и предлагаем направление, где они пригодятся.</p>
+            </li>
+            <li class="tenet" data-img="2">
+              <span class="tenet__word">Плечом к плечу</span>
+              <p>Ведём кандидата от первого разговора до учебного центра. На связи с ним и с его семьёй на всём пути.</p>
+            </li>
+          </ol>
+          <div class="tenets__photo" aria-hidden="true">
+            <img class="is-on" src="img/binoculars.jpg" alt="" loading="lazy">
+            <img src="img/mentor.jpg" alt="" loading="lazy">
+            <img src="img/radio.jpg" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-label="Девиз">
+      <div class="band__media" aria-hidden="true"><img src="img/formation.jpg" alt="" loading="lazy"></div>
+      <p class="band__quote wrap" data-words>Говорим коротко. Делаем честно. Доводим до конца.</p>
+    </section>
+
+    <section class="roles" id="roles" aria-labelledby="roles-title">
+      <div class="wrap">
+        <div class="roles__head">
+          <h2 class="h2 reveal" id="roles-title">Направления</h2>
+          <p class="reveal">Востребованы все военно-учётные специальности. Опыт службы не обязателен: подготовку проходят в учебном центре.</p>
+        </div>
+        <ul class="rank">
+          <li class="role role--photo"><img src="img/assault.jpg" alt="" loading="lazy"><span>Штурмовики</span></li>
+          <li class="role role--photo"><img src="img/spec-flag.jpg" alt="" loading="lazy"><span>Операторы и техники БПЛА</span></li>
+          <li class="role role--photo"><img src="img/spec-nvg.jpg" alt="" loading="lazy"><span>Разведчики</span></li>
+          <li class="role role--photo"><img src="img/tank.jpg" alt="" loading="lazy"><span>Механики-водители</span></li>
+          <li class="role role--text"><span>Водители категорий B–E</span></li>
+          <li class="role role--photo"><img src="img/rifleman.jpg" alt="" loading="lazy"><span>Снайперы</span></li>
+          <li class="role role--photo"><img src="img/signal.jpg" alt="" loading="lazy"><span>Связисты</span></li>
+          <li class="role role--text"><span>Медики</span></li>
+          <li class="role role--text"><span>Сапёры</span></li>
+          <li class="role role--photo"><img src="img/gunner.jpg" alt="" loading="lazy"><span>Пулемётчики</span></li>
+          <li class="role role--photo"><img src="img/artillery.jpg" alt="" loading="lazy"><span>Артиллеристы</span></li>
+          <li class="role role--text"><span>Гранатомётчики</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="path" id="path" aria-labelledby="path-title">
+      <div class="path__pin">
+        <div class="wrap path__head">
+          <h2 class="h2" id="path-title">Шаг за шагом</h2>
+          <p class="path__count" aria-hidden="true"><b>01</b><span>/ 06</span></p>
+        </div>
+        <div class="path__bar" aria-hidden="true"><i></i></div>
+        <ol class="track">
+          <li><figure><img src="img/mentor.jpg" alt="" loading="lazy"></figure><span class="track__n">Шаг 1</span><h3>Разговор</h3><p>Отвечаем на вопросы о службе, сроках и выплатах. Узнаём ваш опыт и пожелания.</p></li>
+          <li><figure><img src="img/binoculars.jpg" alt="" loading="lazy"></figure><span class="track__n">Шаг 2</span><h3>Подбор</h3><p>Предлагаем направление и подразделение под ваши навыки.</p></li>
+          <li><figure><img src="img/field-radio.jpg" alt="" loading="lazy"></figure><span class="track__n">Шаг 3</span><h3>Документы</h3><p>Паспорт, военный билет, права при наличии. Если что-то утеряно, подскажем, как восстановить.</p></li>
+          <li><figure><img src="img/boarding.jpg" alt="" loading="lazy"></figure><span class="track__n">Шаг 4</span><h3>Дорога</h3><p>Согласуем дату приезда в пункт отбора и помогаем спланировать дорогу.</p></li>
+          <li><figure><img src="img/spec-group.jpg" alt="" loading="lazy"></figure><span class="track__n">Шаг 5</span><h3>Контракт</h3><p>Медкомиссия, банковская карта для выплат, подписание контракта на 1, 3 или 5 лет.</p></li>
+          <li><figure><img src="img/mortar-team.jpg" alt="" loading="lazy"></figure><span class="track__n">Шаг 6</span><h3>Подготовка</h3><p>Учебный центр: от двух до трёх месяцев, в зависимости от опыта и специальности.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq__inner">
+        <h2 class="h2 reveal" id="faq-title">Вопросы</h2>
+        <div class="faq__list">
+          <details>
+            <summary>На какой срок заключается контракт?</summary>
+            <p>На 1 год, 3 года или 5 лет. Срок выбираете вы, разницу объясняем до подписания.</p>
+          </details>
+          <details>
+            <summary>Нужен ли опыт военной службы?</summary>
+            <p>Нет. Кандидаты без опыта проходят подготовку в учебном центре. Опыт и гражданские навыки учитываем при подборе направления.</p>
+          </details>
+          <details>
+            <summary>Какие документы нужны?</summary>
+            <p>Паспорт, военный билет и, если есть, водительское удостоверение. Если документы утеряны, подскажем, как их восстановить.</p>
+          </details>
+          <details>
+            <summary>Сколько платят?</summary>
+            <p>Размер выплат зависит от региона, должности и срока контракта. Точные суммы называем на консультации и показываем, каким документом они установлены.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="outro" aria-label="Завершение">
+      <div class="outro__media" aria-hidden="true"><img src="img/winter-rank.jpg" alt="" loading="lazy"></div>
+      <div class="wrap outro__inner">
+        <p class="outro__big reveal">Спарта</p>
+        <a class="action reveal" href="#roles">К направлениям</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <a class="logo" href="#top" aria-label="Спарта, в начало страницы">
+        <svg class="logo__mark" aria-hidden="true"><use href="#mark"/></svg>
+        <span class="logo__word">Спарта</span>
+      </a>
+      <p>Рекрутинговое агентство «Спарта». &copy; 2026</p>
+    </div>
+    <div class="wrap foot__credits">
+      <details>
+        <summary>Фотографии: Министерство обороны Российской Федерации, лицензия CC BY 4.0</summary>
+        <p>Снимки с сайта mil.ru, опубликованные на Wikimedia Commons: учения 45-й бригады специального назначения, 83-й десантно-штурмовой бригады, 138-й мотострелковой бригады и других частей Сухопутных войск. Лицензия: <a href="https://creativecommons.org/licenses/by/4.0/deed.ru" rel="license noopener" target="_blank">CC BY 4.0</a>. Полный список с авторами и ссылками: <a href="img/credits.json">img/credits.json</a>.</p>
+      </details>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
